@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Get Started](get-started/README.md)
+* Get Started
   * [Quick Start](get-started/quick-start.md)
   * [System Overview](get-started/system-overview.md)
   * [Create a Project](get-started/create-a-project.md)
