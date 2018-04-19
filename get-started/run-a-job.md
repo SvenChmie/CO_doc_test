@@ -5,16 +5,21 @@ excerpt: ''
 
 # Run a Job
 
-You can start a job on Clusterone in two ways: using the `just` command line tool or through the [Matrix](https://clusterone.com/matrix), our graphical web interface, Both methods are outlined below. \[block:callout\] { "type": "info", "title": "TL;DR", "body": "- Jump to [creating a job from the command line](https://docs.clusterone.com/v1.0/docs/run-a-job#section-run-a-job-with-the-cli)\n- Or log into the [Matrix](https://clusterone.com/matrix), click on your project and select \"Create Job\". Follow the instructions in the wizard." } \[/block\]
+You can start a job on Clusterone in two ways: using the `just` command line tool or through the [Matrix](https://clusterone.com/matrix), our graphical web interface, Both methods are outlined below. 
 
-\[block:api-header\] { "title": "Run a Job with the CLI" } \[/block\]
+{% hint style="info" %}
+- Jump to [creating a job from the command line](https://docs.clusterone.com/v1.0/docs/run-a-job#section-run-a-job-with-the-cli)
+- Or log into the [Matrix](https://clusterone.com/matrix), click on your project and select \"Create Job\". Follow the instructions in the wizard.
+{% endhint %}
+
+## Run a Job with the CLI
 
 Clusterone's command `just` allows you to create and run jobs from the command line:
 
 ```bash
-$ just create job distributed --project YOUR_PROJECT_NAME \
+just create job distributed --project YOUR_PROJECT_NAME \
 --datasets YOUR_DATASET_NAME --module YOUR_MODULE_NAME --python-version 3 \
---framework-version tensorflow-1.0.0 --worker-type t2.small --ps-type t2.small \
+--framework tensorflow-1.0.0 --worker-type t2.small --ps-type t2.small \
 --time-limit 1h
 ```
 
@@ -33,10 +38,14 @@ The `just create job` command has many more optional parameters to further custo
 Now all that's left to do is starting the job you created. That is done like this:
 
 ```bash
-$ just start job -p PROJECT_NAME/JOB_NAME
+just start job -p PROJECT_NAME/JOB_NAME
 ```
 
-The `-p` parameter determines which job to start. Once the job is running, you can monitor it using `just pulse`. \[block:api-header\] { "title": "Run a Job Using the Matrix" } \[/block\] Instead of using the command line, you can also run and manage jobs with Clusterone's graphical web interface, the [Matrix](https://clusterone.com/matrix).
+The `-p` parameter determines which job to start. Once the job is running, you can monitor it using `just pulse`. 
+
+## Run a Job Using the Matrix
+
+Instead of using the command line, you can also run and manage jobs with Clusterone's graphical web interface, the [Matrix](https://clusterone.com/matrix).
 
 Log into the Matrix with your Clusterone account. On the left side, you can see all your projects. The switch on the top left toggles the list to show your datasets.
 
@@ -44,7 +53,7 @@ To create a new job, select either your project or a dataset. Click on the "Crea
 
 Creating a job is divided into five short steps.
 
-## Code:
+### Code:
 
 Specify the code you want to run on the first page of the Job wizard. Start by selecting which Project you want to run. Choose the project with our example that you created earlier.
 
@@ -56,15 +65,19 @@ In case your code has package dependencies that are not located in the root dire
 
 Finally, Clusterone requires you to specify the Python module it should run. By default, this is `main`. If your module is named differently, specify it here. For the MNIST example we are using in this guide, the module is called `mnist`.
 
-When you're done, click the "Next" button to move on. \[block:image\] { "images": \[ { "image": \[ "[https://files.readme.io/b38df76-Job\_Wizard\_1.JPG](https://files.readme.io/b38df76-Job_Wizard_1.JPG)", "Job\_Wizard\_1.JPG", 1325, 817, "\#252737" \] } \] } \[/block\]
+When you're done, click the "Next" button to move on. 
 
-## Datasets:
+![](/.gitbook/assets/Job_Wizard_1.JPG)
+
+### Datasets:
 
 On the dataset page, select the dataset you want to use for the job. On the right, you can select the commit you would like to use.
 
-Click the "Next" button when you're done. \[block:image\] { "images": \[ { "image": \[ "[https://files.readme.io/524fd4c-Job\_Wizard\_2.JPG](https://files.readme.io/524fd4c-Job_Wizard_2.JPG)", "Job\_Wizard\_2.JPG", 1322, 538, "\#262939" \] } \] } \[/block\]
+Click the "Next" button when you're done.
 
-## Environment:
+![](/.gitbook/assets/Job_Wizard_2.JPG)
+
+### Environment:
 
 The environment page defines the Python environment that is used to run your project code.
 
@@ -72,15 +85,19 @@ Start by choosing the Python version that you wanted to use. Clusterone supports
 
 As a machine learning framework, Clusterone currently offers TensorFlow and PyTorch. The default value is TensorFlow version 1.0.0.
 
-Clusterone further offers the choice two package managers - Pip and Anaconda. You can also define a requirements file for external package requirements. \[block:image\] { "images": \[ { "image": \[ "[https://files.readme.io/28eb0af-Job\_Wizard\_3.JPG](https://files.readme.io/28eb0af-Job_Wizard_3.JPG)", "Job\_Wizard\_3.JPG", 1323, 858, "\#252737" \] } \] } \[/block\]
+Clusterone further offers the choice two package managers - Pip and Anaconda. You can also define a requirements file for external package requirements.
 
-## Resources:
+![](/.gitbook/assets/Job_Wizard_2.JPG)
+
+### Resources:
 
 On the resources page, you can choose between single and distributed execution for your job. You can also define the number of workers and parameter servers, as well as their type of instance.
 
-On the upper right, a bar specifies how many hours your job should run. When you're done, move on by clicking next. \[block:image\] { "images": \[ { "image": \[ "[https://files.readme.io/c79303b-Job\_Wizard\_4.JPG](https://files.readme.io/c79303b-Job_Wizard_4.JPG)", "Job\_Wizard\_4.JPG", 1323, 665, "\#262838" \] } \] } \[/block\]
+On the upper right, a bar specifies how many hours your job should run. When you're done, move on by clicking next. 
 
-## Metadata:
+![](/.gitbook/assets/Job_Wizard_4.JPG)
+
+### Metadata:
 
 The metadata page allows you to add a description to your job. When you're done, click "Create and Start".
 
