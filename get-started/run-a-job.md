@@ -9,7 +9,9 @@ You can start a job on Clusterone in two ways: using the `just` command line too
 
 {% hint style="info" %}
 - Jump to [creating a job from the command line](https://docs.clusterone.com/v1.0/docs/run-a-job#section-run-a-job-with-the-cli)
+
 - Or log into the [Matrix](https://clusterone.com/matrix), click on your project and select \"Create Job\". Follow the instructions in the wizard.
+
 {% endhint %}
 
 ## Run a Job with the CLI
