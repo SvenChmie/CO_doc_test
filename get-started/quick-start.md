@@ -1,7 +1,6 @@
 ---
 title: Quick Start
-excerpt: Get started with Clusterone
-description: Get crackin' in just a minute!
+description: Get started with Clusterone
 ---
 
 # Quick Start
