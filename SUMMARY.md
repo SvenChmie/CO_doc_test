@@ -10,7 +10,7 @@
   * [View your Job and Results](get-started/view-your-job-and-results.md)
 * Documentation
   * [Projects on Clusterone](documentation/projects-on-clusterone.md)
-    * [Projects hosted by Clusterone](documentation/projects-on-clusterone/projects-hosted-on-clusterone.md)
+    * [Projects hosted by Clusterone](documentation/projects-on-clusterone/projects-hosted-by-clusterone.md)
     * [GitHub Projects](documentation/projects-on-clusterone/github-projects.md)
   * [Data on Clusterone](documentation/data-on-clusterone.md)
     * [Datasets hosted by Clusterone](documentation/data-on-clusterone/datasets-hosted-by-clusterone.md)
