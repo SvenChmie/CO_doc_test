@@ -10,7 +10,7 @@ You can start a job on Clusterone in two ways: using the `just` command line too
 {% hint style="info" %}
 - Jump to [creating a job from the command line](https://docs.clusterone.com/v1.0/docs/run-a-job#section-run-a-job-with-the-cli)
 
-- Or log into the [Matrix](https://clusterone.com/matrix), click on your project and select \"Create Job\". Follow the instructions in the wizard.
+- Or log into the [Matrix](https://clusterone.com/matrix), click on your project and select "Create Job". Follow the instructions in the wizard.
 
 {% endhint %}
 
@@ -55,7 +55,7 @@ To create a new job, select either your project or a dataset. Click on the "Crea
 
 Creating a job is divided into five short steps.
 
-### Code:
+### Code
 
 Specify the code you want to run on the first page of the Job wizard. Start by selecting which Project you want to run. Choose the project with our example that you created earlier.
 
@@ -71,7 +71,7 @@ When you're done, click the "Next" button to move on.
 
 ![](/.gitbook/assets/Job_Wizard_1.JPG)
 
-### Datasets:
+### Datasets
 
 On the dataset page, select the dataset you want to use for the job. On the right, you can select the commit you would like to use.
 
@@ -79,7 +79,7 @@ Click the "Next" button when you're done.
 
 ![](/.gitbook/assets/Job_Wizard_2.JPG)
 
-### Environment:
+### Environment
 
 The environment page defines the Python environment that is used to run your project code.
 
@@ -91,7 +91,7 @@ Clusterone further offers the choice two package managers - Pip and Anaconda. Yo
 
 ![](/.gitbook/assets/Job_Wizard_2.JPG)
 
-### Resources:
+### Resources
 
 On the resources page, you can choose between single and distributed execution for your job. You can also define the number of workers and parameter servers, as well as their type of instance.
 
@@ -99,7 +99,7 @@ On the upper right, a bar specifies how many hours your job should run. When you
 
 ![](/.gitbook/assets/Job_Wizard_4.JPG)
 
-### Metadata:
+### Metadata
 
 The metadata page allows you to add a description to your job. When you're done, click "Create and Start".
 
