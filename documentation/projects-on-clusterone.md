@@ -1,5 +1,5 @@
 ---
-******title**: "Projects on Clusterone"
+title: "Projects on Clusterone"
 excerpt: ""
 ---
 Code on Clusterone is organized into projects. Each project contains code stored in a Git repository. To run the code, you have to create a job within the project.
