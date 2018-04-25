@@ -5,7 +5,7 @@ excerpt: ''
 
 # Create a Project
 
-On Clusterone, code repositories are called _projects_. First, we'll show you how to create a new project. Then, we'll push an existing Git repository to Clusterone to fill your project with life. 
+On Clusterone, code repositories are called _projects_. First, we'll show you how to create a new project. Then, we'll push an existing Git repository to Clusterone to fill your project with life.
 
 {% hint style="info" %}
 Projects on Clusterone can either contain their own Git repository or link to a repository on GitHub. Here we're using the former. For an explanation of how to link your GitHub repository to Clusterone, [see here](doc:github-repositories).
@@ -25,9 +25,9 @@ Log into your Clusterone account:
 just login
 ```
 
-The program will prompt you for your username and password. Note: Your username is not your email address, but the name you provided upon registration! 
+The program will prompt you for your username and password. Note: Your username is not your email address, but the name you provided upon registration!
 
-## Create a new project with the CLI 
+## Create a new project with the CLI
 
 There are two ways to create a project with the CLI:
 
@@ -59,3 +59,4 @@ just get projects
 ```
 
 Alternatively, navigate to [clusterone.com/matrix](http://www.clusterone.com/matrix). You'll see that the project has been added to your Clusterone account.
+

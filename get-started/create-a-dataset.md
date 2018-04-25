@@ -11,9 +11,9 @@ But what if you want to use your own dataset? No problem!
 
 On Clusterone, datasets are stored in a Git repository separate from your project code. To be able to handle large datasets, Clusterone uses Git LFS.
 
-If you don't have Git LFS yet, go get it [here](https://git-lfs.github.com/). 
+If you don't have Git LFS yet, go get it [here](https://git-lfs.github.com/).
 
-##Prepare your dataset for Clusterone
+## Prepare your dataset for Clusterone
 
 Navigate your command line to the folder containing your dataset.
 
@@ -36,9 +36,9 @@ git add -A
 git commit -m "added dataset"
 ```
 
-This operation can take a moment if the data is large. 
+This operation can take a moment if the data is large.
 
-##Create the dataset on Clusterone
+## Create the dataset on Clusterone
 
 Create a new dataset on Clusterone with:
 
@@ -61,3 +61,4 @@ git push clusterone master
 The path to your dataset will be `username/dataset-name`.
 
 The transfer might take a while, so go get yourself a nice coffee, or use the time to read some of the great articles on our [blog](http://medium.com/clusterone)!
+

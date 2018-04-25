@@ -5,13 +5,11 @@ excerpt: ''
 
 # Run a Job
 
-You can start a job on Clusterone in two ways: using the `just` command line tool or through the [Matrix](https://clusterone.com/matrix), our graphical web interface, Both methods are outlined below. 
+You can start a job on Clusterone in two ways: using the `just` command line tool or through the [Matrix](https://clusterone.com/matrix), our graphical web interface, Both methods are outlined below.
 
 {% hint style="info" %}
-- Jump to [creating a job from the command line](https://docs.clusterone.com/v1.0/docs/run-a-job#section-run-a-job-with-the-cli)
-
-- Or log into the [Matrix](https://clusterone.com/matrix), click on your project and select "Create Job". Follow the instructions in the wizard.
-
+* Jump to [creating a job from the command line](https://docs.clusterone.com/v1.0/docs/run-a-job#section-run-a-job-with-the-cli)
+* Or log into the [Matrix](https://clusterone.com/matrix), click on your project and select "Create Job". Follow the instructions in the wizard.
 {% endhint %}
 
 ## Run a Job with the CLI
@@ -43,7 +41,7 @@ Now all that's left to do is starting the job you created. That is done like thi
 just start job -p PROJECT_NAME/JOB_NAME
 ```
 
-The `-p` parameter determines which job to start. Once the job is running, you can monitor it using `just pulse`. 
+The `-p` parameter determines which job to start. Once the job is running, you can monitor it using `just pulse`.
 
 ## Run a Job Using the Matrix
 
@@ -67,9 +65,9 @@ In case your code has package dependencies that are not located in the root dire
 
 Finally, Clusterone requires you to specify the Python module it should run. By default, this is `main`. If your module is named differently, specify it here. For the MNIST example we are using in this guide, the module is called `mnist`.
 
-When you're done, click the "Next" button to move on. 
+When you're done, click the "Next" button to move on.
 
-![](/.gitbook/assets/Job_Wizard_1.JPG)
+![](../.gitbook/assets/job_wizard_1.JPG)
 
 ### Datasets
 
@@ -77,7 +75,7 @@ On the dataset page, select the dataset you want to use for the job. On the righ
 
 Click the "Next" button when you're done.
 
-![](/.gitbook/assets/Job_Wizard_2.JPG)
+![](../.gitbook/assets/job_wizard_2%20%281%29.JPG)
 
 ### Environment
 
@@ -89,15 +87,15 @@ As a machine learning framework, Clusterone currently offers TensorFlow and PyTo
 
 Clusterone further offers the choice two package managers - Pip and Anaconda. You can also define a requirements file for external package requirements.
 
-![](/.gitbook/assets/Job_Wizard_2.JPG)
+![](../.gitbook/assets/job_wizard_2%20%281%29.JPG)
 
 ### Resources
 
 On the resources page, you can choose between single and distributed execution for your job. You can also define the number of workers and parameter servers, as well as their type of instance.
 
-On the upper right, a bar specifies how many hours your job should run. When you're done, move on by clicking next. 
+On the upper right, a bar specifies how many hours your job should run. When you're done, move on by clicking next.
 
-![](/.gitbook/assets/Job_Wizard_4.JPG)
+![](../.gitbook/assets/job_wizard_4.JPG)
 
 ### Metadata
 

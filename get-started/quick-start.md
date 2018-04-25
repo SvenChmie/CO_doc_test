@@ -70,7 +70,7 @@ Finally, all that's left to do is starting the job:
 just start job -p mnist/first-job
 ```
 
-That's it! You can monitor the status of your job on the command line using `just get events`. More elaborate monitoring is available on the [Matrix](https://clusterone.com/matrix), Clusterone's graphical web interface, including automatic integration with TensorBoard. 
+That's it! You can monitor the status of your job on the command line using `just get events`. More elaborate monitoring is available on the [Matrix](https://clusterone.com/matrix), Clusterone's graphical web interface, including automatic integration with TensorBoard.
 
 ## Learn More
 
